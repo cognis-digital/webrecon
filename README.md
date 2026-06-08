@@ -36,9 +36,10 @@ know the stack
 <a name="features"></a>
 ## Features
 
-- ✅ Todo
-- ✅ Fixme
-- ✅ Xxx
+- ✅ Fingerprint
+- ✅ Load Response
+- ✅ Fingerprint Response
+- ✅ Result To Json
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
