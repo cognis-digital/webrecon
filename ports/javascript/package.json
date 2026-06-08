@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/webrecon",
+  "version": "0.2.0",
+  "description": "JavaScript port of webrecon (Cognis Neural Suite)",
+  "bin": {
+    "webrecon": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
