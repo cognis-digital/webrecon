@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+Date: Mon, 08 Jun 2026 12:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Server: nginx/1.24.0
+X-Powered-By: PHP/8.2.12
+Link: <https://blog.example/wp-json/>; rel="https://api.w.org/"
+Set-Cookie: PHPSESSID=ab12cd34ef56; path=/; HttpOnly
+Set-Cookie: wordpress_logged_in_9f8e=user%7C1717848000; path=/; HttpOnly
+CF-RAY: 8a1b2c3d4e5f6789-IAD
+CF-Cache-Status: DYNAMIC
+Strict-Transport-Security: max-age=31536000
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="WordPress 6.5.3">
+<title>Example Blog</title>
+<link rel="stylesheet" href="https://blog.example/wp-content/themes/twentytwentyfour/style.css">
+<link rel="stylesheet" href="https://blog.example/wp-includes/css/dist/block-library/style.min.css">
+<script src="https://blog.example/wp-content/jquery-3.7.1.min.js"></script>
+<script src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXX"></script>
+</head>
+<body class="home blog">
+<div id="page" class="site">
+<h1>Hello from the demo</h1>
+</div>
+</body>
+</html>
