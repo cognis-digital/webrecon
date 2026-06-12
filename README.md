@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-webrecon
+pip install "git+https://github.com/cognis-digital/webrecon.git"
 webrecon scan .            # → prioritized findings in seconds
 ```
 
@@ -49,7 +49,7 @@ know the stack
 ## Quick start
 
 ```bash
-pip install cognis-webrecon
+pip install "git+https://github.com/cognis-digital/webrecon.git"
 webrecon --version
 webrecon scan .                       # scan current project
 webrecon scan . --format json         # machine-readable
