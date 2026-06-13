@@ -20,6 +20,31 @@ pip install cognis-webrecon
 webrecon scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+1. **Install** the CLI (console script `webrecon`):
+   ```bash
+   pip install cognis-webrecon
+   ```
+2. **Capture an HTTP response yourself** (webrecon never touches the network) with your own authorized tooling:
+   ```bash
+   curl -i https://example.test > response.txt
+   ```
+3. **Fingerprint the captured response** — pass a file or `-` for stdin:
+   ```bash
+   webrecon scan response.txt
+   curl -i https://example.test | webrecon scan -
+   ```
+4. **Read the result** as JSON, optionally tagging the report with a target label:
+   ```bash
+   webrecon scan response.txt --format json --target https://example.test
+   ```
+5. **Automate in CI** — exit 0 = nothing matched, 1 = findings (actionable), 2 = input error:
+   ```yaml
+   - run: pip install cognis-webrecon
+   - run: curl -i https://example.test | webrecon scan - --format json
+   ```
+
 ## Contents
 
 - [Why webrecon?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
